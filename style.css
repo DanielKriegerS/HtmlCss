@@ -1,0 +1,23 @@
+main{
+	font-family: "Times New Roman";
+	font-style: italic;
+}
+header{
+	text-align: center;
+}
+h2{
+	text-align: center;
+}
+p {
+	font-family: "Trebuchet MS";
+	text-indent: 2rem;
+	letter-spacing: 0.1rem;
+}
+
+h4{
+	font-family: "Arial Narrow";
+	font-weight: 800;
+}
+nav{
+	text-align: center;
+}
