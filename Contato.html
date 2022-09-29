@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="nome" placeholder="insira seu nome"/> <br/>
+        <input type="email" name="email" placeholder="insira seu e-mail"/> <br/>
+        <input type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx"/> <br/>
+        <input type="number" name="idade" placeholder="idade"/> <br/>
+        <input type="url" name="linkedin" placeholder="linkedin"/> <br/>
+        Urgência <input type="range" name="urgencia" min=0 max=100 step=0.1> <br/>
+        <input type="checkbox" name="dia-da-semana" value="2"/> Segunda-feira <br/>
+        <input type="checkbox" name="dia-da-semana" value="4"/> Quarta-feira <br/>
+        <input type="checkbox" name="dia-da-semana" value="6"/> Sexta-feira <br/>
+        <input type="radio" name="horario" value="manha"/> Manhã
+        <input type="radio" name="horario" value="manha"/> Tarde
+        <input type="radio" name="horario" value="manha"/> Noite <br/>
+        <textarea name="mensagem" cols=60 rows=10></textarea> <br/>
+        Cidade: <input list="cidade" name="cidade" />
+        <datalist id="cidade">
+
+            <option value="Santa Maria"> Santa Maria </option>
+            <option value="São Borja"> São Borja </option>
+            <option value="Santiago"> Santiago </option>
+        </datalist>
+
+       <button type="button"> Outra ação </button>
+       <button type="reset"> Limpar </button>
+       <button type="submit"> Enviar </button>
+
+    </form>
+    <a href = "Aula1.html"> Voltar ao Inicio </a>
+</body>
+</html>
