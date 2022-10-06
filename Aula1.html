@@ -12,18 +12,29 @@
     <script src="jquery-3.3.1.min.js"></script>
     <script>
         var verify = false;
-    
+        var verifyT = false;
+
      $(document).ready(function(){    
          $("ol").css("display","none")
              $(".menu").click(function(){
                 if(verify == false){
              $(".itemMenu").slideDown(750);
              verify = true;
-         } else { 
+                } else { 
             $(".itemMenu").slideUp(750);
             verify = false;
                 }
                     });
+
+            $(".telefones").click(function(){
+                if(verifyT == false){
+            $(".itemTel").slideDown(750);
+                verifyT = true;
+                } else { 
+            $(".itemTel").slideUp(750);
+                verifyT = false;
+                }
+                    });            
                         })
     </script> 
 
@@ -36,8 +47,8 @@
         </span>
         </h1>
     </header>
-    <nav class="menu">
-        <h2>
+    <nav>
+        <h2 class="menu">
             Menu Principal
         </h2>
         <ol class="itemMenu">
@@ -54,8 +65,8 @@
             <ul>
                 <li><a href="https://facebook.com"> Facebook </a></li>
                 <li><a href="https://linkedin.com"> Linkedin </a></li>
-                <li><a href="https://facebook.com"> Telefone </a></li>
-                <ul>
+                <li class="telefones"> Telefone </a></li>
+                <ul class="itemTel">
                     <li> fixo </li>
                     <li> celular </li>
                     <li> comercial</li>
@@ -108,26 +119,10 @@
                     Morbi condimentum dignissim eleifend.
                 </p>
             </article>
-            <article>
-                <h4>
-                    Curso JAVA, OOP - Udemy <br/>
-                </h4>
-            </article>
-            <article>
-                <h4>
-                    Curso de HTML - Proway EAD <br/>
-                </h4>
-            </article>
-        </section>
+            </section>
 
         <footer>
-            <nav>
-               <a href="https://linkedin.com/in/daniel-krieger-schifelbain-705b2124a"> LinkedIn <br/> </a>
-               <a href="//proway.com.br"> Proway <br/> </a>
-                Escola <br/>
-                Faculdade <br/>
-            </nav>
-            Atualizado 2022.
+           Atualizado 2022.
         </footer>
     </main>
     <section>
@@ -142,30 +137,20 @@
                 <li> cnh xxxxxxxxx</li>
             </ul>
         </article>
-        <article>
-            <section>
-                <h5>
-                    Dados de contato
-                </h5>
-                <a href="mailto:danielschifelbain@gmail.com"> danielschifelbain@gmail.com <br/></a>
-                <a href="tel:55559999999">(55)999999999</a>
-            </section>
-        </article>
-    </section>
+           </section>
     <aside>
-       <h5>
+       <h4>
            Experiência profissional
-       </h5>
+       </h4>
         <article>
-            <ol>
-                <h6>
+                <h5>
                     Auxiliar de operações - Empresa ABC
-                </h6>
+                </h5>
                 <header>
                     Inicio mar/2022
                 </header>
                 <section>
-                    <h6>Responsabilidades</h6>
+                    <h5>Responsabilidades</h5>
                     <p>
                         Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit. Vestibulum
@@ -179,25 +164,13 @@
                         Morbi condimentum dignissim eleifend.
                     </p>
                 </section>
-                <footer>
+                <footer class="foot1">
                     Término dez/2022
                 </footer>
-            </ol>
 
         </article>
-            <nav>
-                <h6>
-                    Navegação secundária
-                </h6>
-                <ul>
-                   <li> Links complementares <br/></li>
-                   <li> Empresa ABC </li>
-                </ul>
-
-            </nav>
-
     </aside>
-    <aside>
+    <aside class="tabela">
         <table>
             <caption><h4> Horários de estudo</h4></caption>
             <thead>
@@ -220,13 +193,6 @@
                     <th>
                        sex
                     </th>
-                    <th>
-                       sab
-                    </th>
-                    <th>
-                       dom
-                    </th>
-
                 </tr>
             </thead>
             <tbody>
@@ -246,19 +212,12 @@
         </table>
 
     </aside>
-    <footer>
-        <nav>
-            LinkedIn
-            ProWay
-            Escola
-            Faculdade
-        </nav>
+    <footer class="foot2">
+        <br/>
         Criado no curso de HTML <br/>
-        &copy; 2021 - Daniel Krieger
+        &copy; 2022 - Daniel Krieger
     </footer>
 
 </body>
-
-
 
 </html>
