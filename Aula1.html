@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <title>Curriculo Daniel</title>
     <link rel="stylesheet" href="style.css"/>
+   
+    
+    
 </head>
 <body>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        var verify = false;
+    
+     $(document).ready(function(){    
+         $("ol").css("display","none")
+             $(".menu").click(function(){
+                if(verify == false){
+             $(".itemMenu").slideDown(750);
+             verify = true;
+         } else { 
+            $(".itemMenu").slideUp(750);
+            verify = false;
+                }
+                    });
+                        })
+    </script> 
+
     <header>
         <img src="https://via.placeholder.com/200" width="200" height="200" alt="Quadrado cinza com o número 200 dentro."/>
         <h1>
@@ -15,11 +36,11 @@
         </span>
         </h1>
     </header>
-    <nav>
+    <nav class="menu">
         <h2>
-            Navegação principal
+            Menu Principal
         </h2>
-        <ol>
+        <ol class="itemMenu">
           <li>
            <a href = "Aula1.html" target="_self">  Inicio </a>
         </li>
@@ -43,7 +64,7 @@
 
         </li>
         </ol>
-        </nav>
+    </nav>
     <main>
         <header>
            <h2>
@@ -177,7 +198,6 @@
 
     </aside>
     <aside>
-
         <table>
             <caption><h4> Horários de estudo</h4></caption>
             <thead>
@@ -238,4 +258,7 @@
     </footer>
 
 </body>
+
+
+
 </html>
