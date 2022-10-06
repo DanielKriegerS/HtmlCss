@@ -17,15 +17,19 @@ header{
 }
 th{
 	border:1px solid #26A1FE;
-	border-radius: 6px;
+	border-collapse: collapse;
+	border-radius: 20rem;
 }
 td{
 	border:1px solid #26A1FE;
-	border-radius: 6px;
+	border-collapse: collapse;
+	
 }
+
 table{
+	border-radius: 20px;
+	border-collapse: collapse;
 	color:#FFF;
-	border-radius: 20px;	
 	background:#061b1b;
 	border:8px solid #26A1FE;
 	}
@@ -52,8 +56,11 @@ nav{
 	text-align: center;
 }
 a:hover{
-	color: rgba(71, 177, 22, 0.507);
+	color: rgba(142, 230, 218, 0.700);
 }
 a:visited{
-	color: #1c410748;
+	color:  rgba(142, 230, 218, 0.700);
+}
+ol.itemMenu{
+	color:  rgba(142, 230, 218, 0.700);
 }
