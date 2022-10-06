@@ -2,22 +2,48 @@ main{
 	font-family: "Times New Roman";
 	font-style: italic;
 }
-
+footer.foot1{
+	text-align: center;
+}
+footer.foot2{
+	text-align: right;
+}
+body{
+	background-color: rgb(4, 30, 50);
+	color:#f0ffff;
+}
 header{
 	text-align: center;
 }
-
+th{
+	border:1px solid #26A1FE;
+	border-radius: 6px;
+}
+td{
+	border:1px solid #26A1FE;
+	border-radius: 6px;
+}
+table{
+	color:#FFF;
+	border-radius: 20px;	
+	background:#061b1b;
+	border:8px solid #26A1FE;
+	}
 h2{
 	text-align: center;
-
 }
 
+h2.menu{
+	cursor: pointer; 
+}
+li.telefones{
+	cursor: pointer;
+}
 p {
 	font-family: "Trebuchet MS";
 	text-indent: 2rem;
 	letter-spacing: 0.1rem;
 }
-
 h4{
 	font-family: "Arial Narrow";
 	font-weight: 800;
@@ -25,15 +51,9 @@ h4{
 nav{
 	text-align: center;
 }
-
-a:active {
-	color: rgb(255, 0, 200);
-	cursor: pointer;
-	text-decoration: underline;
+a:hover{
+	color: rgba(71, 177, 22, 0.507);
 }
-a:visited {
-	color: red;
-}
-a:hover {
-	color: blue;
+a:visited{
+	color: #1c410748;
 }
