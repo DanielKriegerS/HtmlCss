@@ -9,45 +9,8 @@
     
 </head>
 <body>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script>
-        var verifyB = true;
-        var verify = false;
-        var verifyT = false;
-
-    $(document).ready(function(){    
-        $("#but1").click(function(){
-            if(verifyB == true){
-            $("table").fadeIn(1500);
-            verifyB = false;
-            } else {
-                $("table").fadeOut(1500);
-                verifyB = true;
-            };
-        })
-
-         $("ol").css("display","none")
-             $(".menu").click(function(){
-                if(verify == false){
-             $(".itemMenu").slideDown(750);
-             verify = true;
-                } else { 
-            $(".itemMenu").slideUp(750);
-            verify = false;
-                }
-                    });
-
-        $(".telefones").click(function(){
-            if(verifyT == false){
-        $(".itemTel").slideDown(750);
-            verifyT = true;
-            } else { 
-        $(".itemTel").slideUp(750);
-            verifyT = false;
-            }
-                });   
-            })         
-    </script> 
+    
+    
 
     <header>
         <img src="https://via.placeholder.com/200" width="200" height="200" alt="Quadrado cinza com o número 200 dentro."/>
@@ -183,6 +146,7 @@
         </article>
     </aside>
     <aside>
+        <button type="button"  class="but1">Mostrar/Ocultar</button>
         <table align="center" width="450" height="130">
             <caption><h4> Horários de estudo</h4></caption>
             <thead>
@@ -222,14 +186,14 @@
                 </tr>
             </tbody>
         </table>
-    <button type="button" id="but1">Mostrar/Ocultar</button>
     </aside>
     <footer class="foot2">
         <br/>
         Criado no curso de HTML <br/>
         &copy; 2022 - Daniel Krieger
     </footer>
-
+    
 </body>
-
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jsFile.js"></script>
 </html>

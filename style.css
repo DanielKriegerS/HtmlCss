@@ -64,3 +64,31 @@ a:visited{
 ol.itemMenu{
 	color:  rgba(142, 230, 218, 0.700);
 }
+button.but1{
+  	font-size: 1em;
+  	background: #3467FE;
+  	color: #fff;
+  	border: 0.25rem solid #3438FE;
+  	padding: 0.85em 0.75em;
+  	margin: 1rem;
+  	position: relative;
+  	z-index: 1;
+  	overflow: hidden;
+}
+button.but1:hover {
+	transition-property: font-size;
+	transition-duration: 5ms;
+	transition-delay: 6ms;
+	background: #3498db;
+	color: #FFF;
+  }
+button.but1::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	padding: 0.85em 0.75em;
+	display: block;
+}
+
+
+
